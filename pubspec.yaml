@@ -1,0 +1,90 @@
+name: garden_helper
+description: Приложение для помощи в уходе за растениями
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  internet_connection_checker: ^1.0.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Архитектура и управление состоянием
+  flutter_bloc: ^8.1.3
+  get_it: ^7.6.4
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+  provider: ^6.1.1
+
+  # Работа с данными
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  firebase_storage: ^11.5.6
+  cloud_firestore: ^4.13.6
+  firebase_analytics: ^10.7.4
+  firebase_messaging: ^14.7.9
+
+  # UI/UX
+  flutter_svg: ^2.0.9
+  cached_network_image: ^3.3.0
+  lottie: ^2.7.0
+  flutter_slidable: ^3.0.1
+  fl_chart: ^0.65.0
+  shimmer: ^3.0.0
+  flutter_local_notifications: ^16.2.0
+  intl: ^0.19.0
+
+  # Сеть и API
+  dio: ^5.4.0
+  http: ^1.1.2
+  connectivity_plus: ^5.0.2
+
+  # Изображения и медиа
+  image_picker: ^1.0.4
+  photo_view: ^0.14.0
+
+  # Другие
+  geolocator: ^10.1.0
+  url_launcher: ^6.2.1
+  package_info_plus: ^5.0.1
+  permission_handler: ^11.1.0
+  device_info_plus: ^9.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  mockito: ^5.4.2
+  build_runner: ^2.4.7
+  hive_generator: ^2.0.1
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.6
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Montserrat-Light.ttf
+          weight: 300
